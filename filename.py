@@ -5,7 +5,7 @@ import asyncio
 import colorsys
 import random
 import platform
-from  import Game, Embed, Color, Status
+
 import os
 import functools
 import time
