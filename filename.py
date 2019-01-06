@@ -1,11 +1,3 @@
-python-3.6.5
-worker: python darkbot.py
-pynacl==1.2.1
-git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]
-pip
-youtube_dl
-colorlog
-cffi --only-binary all; sys_platform == 'import discord
 from discord.ext import commands
 from discord.ext.commands.cooldowns import BucketType
 import asyncio
