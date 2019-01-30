@@ -21,7 +21,12 @@ async def warn():
 	
 @bot.command()
 async def thing():	
-	await bot.say('@Sl𝓐ve Thing#0468 is bad')
+	await bot.say('@Slave Thing#0468 is bad')
+
+@bot.command(pass_context=True) 
+async def mute(ctx,target:discord.Member):
+	
+	
  
 
 
