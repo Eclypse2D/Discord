@@ -27,7 +27,7 @@ async def mute(ctx,target:discord.Member):
 	
 @bot.command(pass_context=True) 
 async def warn(ctx,target:discord.Member):
-	await bot.send_message(target,'Warning!')
+	await bot.send_message(target,'You have got warned. Please do not keep doing whatever you did')
 	
 @bot.command(pass_context=True)
 async def kick(ctx,target:discord.Member):
