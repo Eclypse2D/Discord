@@ -24,7 +24,14 @@ async def thing():
 	await bot.say('@Slave Thing#0468 is bad')
 
 @bot.command(pass_context=True) 
-async def mute(ctx,target:discord.Member):
+
+	
+	
+	
+	
+	
+	
+	
 	
 	
  
