@@ -37,4 +37,4 @@ async def kick(ctx,target:discord.Member):
 async def ban(ctx,target:discord.Member):
 	await bot.ban(target)
 
-bot.run('NTMxMTY0MDUzMjg5MzA0MDc0.DxJ9VA.rLYqQzO-xsc051ZDp5aQtYaNmlU')
+
