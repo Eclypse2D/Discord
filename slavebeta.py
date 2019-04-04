@@ -1826,4 +1826,4 @@ async def embed(ctx, *args):
       await bot.send_message(ctx.message.channel, embed=Embed(color = color, description=text))
       await bot.delete_message(ctx.message)    
 
-client.run(os.getenv('Token')) 
+bot.run('NTMxMTY0MDUzMjg5MzA0MDc0.XKTKKQ.pYCq2t0dl8-t8sFm5R51CxBTue8')
