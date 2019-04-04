@@ -610,7 +610,7 @@ async def ping(ctx):
 	
 @bot.command(pass_context = True)
 @commands.has_permissions(administrator=True) 
-async def delchannel(ctx, channel: discord.Channel=None):
+async def delchannel(ctx, channel: discord=None):
     if channel is None:
         await bot.delete_channel(ctx.message.channel)
         await bot.send_message(ctx.message.author, "{} channel has been deleted in {}".format(ctx.message.channel.name, ctx.message.server.name))
