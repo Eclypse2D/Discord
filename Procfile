@@ -1,1 +1,1 @@
-worker: python filename.py
+worker: python slavebeta.py
