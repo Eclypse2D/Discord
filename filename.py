@@ -610,13 +610,12 @@ async def ping(ctx):
 	
 @bot.command(pass_context = True)
 @commands.has_permissions(administrator=True) 
-async def delchannel(ctx, channel: discord=None):
-    if channel is None:
-        await bot.delete_channel(ctx.message.channel)
-        await bot.send_message(ctx.message.author, "{} channel has been deleted in {}".format(ctx.message.channel.name, ctx.message.server.name))
-    else:
-        await bot.delete_channel(channel)
-        await bot.say("{} channel has been deleted.".format(channel.name))
+    
+        
+
+
+
+
 
 
 @bot.command(pass_context = True)
@@ -1046,18 +1045,15 @@ async def iamshreyas(ctx):
         print('Added ShreyasMF role in ' + (ctx.message.author.name))
         await bot.send_message(author, embed=embed)
 	
-@bot.command(pass_context=True)
-async def iamcoder(ctx):
-    author = ctx.message.author
-    r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
-    embed = discord.Embed(title="Successfully added", description="Programmer role", color = discord.Color((r << 16) + (g << 8) + b))
-    embed.add_field(name="Enjoy! ", value="Happy Coding :-). Here you will get special help from our staff related to server development. ", inline=True)
+
+
+
     
-    await bot.delete_message(ctx.message)
-    role = discord.utils.get(ctx.message.server.roles, name='Programmer')
-    await bot.add_roles(ctx.message.author, role)
-    print('Added codies role in ' + (ctx.message.author.name))
-    await bot.send_message(author, embed=embed)
+
+
+
+
+
     
 @bot.command(pass_context=True)
 async def iamnotcoder(ctx):
@@ -1209,19 +1205,18 @@ async def poll(ctx, question, *options: str):
 
         if len(options) == 2 and options[0] == 'yes' and options[1] == 'no':
             reactions = ['👍', '👎']
-        else:
-            reactions = ['1\u20e3', '2\u20e3', '3\u20e3', '4\u20e3', '5\u20e3', '6\u20e3', '7\u20e3', '8\u20e3', '9\u20e3', '\U0001f51f']
+       
 
-        description = []
-        for x, option in enumerate(options):
-            description += '\n {} {}'.format(reactions[x], option)
-            r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
-        embed = discord.Embed(title=question, description=''.join(description), color = discord.Color((r << 16) + (g << 8) + b))
-        react_message = await bot.say(embed=embed)
-        for reaction in reactions[:len(options)]:
-            await bot.add_reaction(react_message, reaction)
-        embed.set_footer(text='Poll ID: {}'.format(react_message.id))
-        await bot.edit_message(react_message, embed=embed)
+
+        
+
+
+
+
+
+
+
+
         
 @bot.command(pass_context = True)
 async def help(ctx):
