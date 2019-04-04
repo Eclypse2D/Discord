@@ -618,17 +618,6 @@ async def ping(ctx):
 
 
 
-@bot.command(pass_context = True)
-@commands.has_permissions(administrator=True) 
-async def addchannel(ctx, channel: str=None):
-    server = ctx.message.server
-    if channel is None:
-        await bot.say("Please specify a channel name")
-    else:
-        everyone_perms = discord.PermissionOverwrite(send_messages=None, read_messages=None)
-        everyone = discord.ChannelPermissions(target=server.default_role, overwrite=everyone_perms)
-        await bot.create_channel(server, channel, everyone)
-        await bot.say("{} channel has been created.".format(channel))
 
 	
 @bot.command(pass_context = True)
