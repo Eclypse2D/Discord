@@ -605,10 +605,8 @@ async def ping(ctx):
 @bot.command(pass_context = True)
 @commands.has_permissions(administrator=True) 
 
-    r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
-    embed=discord.Embed(title="Announcement", description="{}".format(msg), color = discord.Color((r << 16) + (g << 8) + b))
-    await bot.send_message(channel, embed=embed)
-    await bot.delete_message(ctx.message)
+   
+
 	
 @bot.command(pass_context = True)
 @commands.has_permissions(administrator=True) 
