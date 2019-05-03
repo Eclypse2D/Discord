@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands.cooldowns import BucketType
+from discord.ext.commands import Bot
 import asyncio
 import colorsys
 import random
@@ -12,6 +13,7 @@ import time
 import datetime
 import json
 import aiohttp
+
 
 Forbidden= discord.Embed(title="Permission Denied", description="1) Please check whether you have permission to perform this action or not. \n2) Please check whether my role has permission to perform this action in this channel or not. \n3) Please check my role position.", color=0x00ff00)
 
@@ -1806,4 +1808,4 @@ async def embed(ctx, *args):
       await bot.send_message(ctx.message.channel, embed=Embed(color = color, description=text))
       await bot.delete_message(ctx.message)    
 
-bot.run('NTMxMTY0MDUzMjg5MzA0MDc0.XKTKKQ.pYCq2t0dl8-t8sFm5R51CxBTue8')
+client.run(stc(os.environ.get('BOT_TOKEN'))) 
