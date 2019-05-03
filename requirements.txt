@@ -8,7 +8,9 @@ pip
 
 youtube_dl
 
-pymoe
+Pymoe
+
+asyncio
 
 colorlog
 
