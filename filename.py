@@ -12,7 +12,7 @@ import time
 import datetime
 import requests
 import json
-from discord.ext.commands.cooldowns
+
 import aiohttp
 
 
@@ -84,4 +84,4 @@ async def lick(ctx, user: discord.Member):
     else:
         embed = discord.Embed(title=f"{user.name} You just got licked by {ctx.message.author.name}", color = discord.Color((r << 16) + (g << 8) + b))
         
-bot.run('') 
+bot.run('NTMxMTY0MDUzMjg5MzA0MDc0.XNF30Q.Z5u_AlJ6bzc8ZmEcVbkYI4XlnnQ') 
