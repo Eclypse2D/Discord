@@ -84,4 +84,4 @@ async def lick(ctx, user: discord.Member):
     else:
         embed = discord.Embed(title=f"{user.name} You just got licked by {ctx.message.author.name}", color = discord.Color((r << 16) + (g << 8) + b))
         
-bot.run(stc(os.environ.get('BOT_TOKEN'))) 
+bot.run(os.environ.get('BOT_TOKEN'))) 
