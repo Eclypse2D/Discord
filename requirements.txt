@@ -14,4 +14,8 @@ asyncio
 
 colorlog
 
+rewrite
+
+git
+
 cffi --only-binary all; sys_platform == 'win32'
